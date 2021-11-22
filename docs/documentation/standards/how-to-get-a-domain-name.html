@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en" class="govuk-template no-js">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>How to get, register or manage a domain name - MoJ Technical Guidance</title>
+
+    <link href="../../stylesheets/manifest.css" rel="stylesheet" />
+
+    <link rel="canonical" href="https://technical-guidance.service.justice.gov.uk//documentation/standards/how-to-get-a-domain-name.html">
+
+      <meta name="robots" content="noindex" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:domain" content="technical-guidance.service.justice.gov.uk" />
+      <meta name="twitter:image" content="https://technical-guidance.service.justice.gov.uk//images/govuk-large.png" />
+      <meta name="twitter:title" content="How to get, register or manage a domain name - MoJ Technical Guidance" />
+      <meta name="twitter:url" content="https://technical-guidance.service.justice.gov.uk//documentation/standards/how-to-get-a-domain-name.html" />
+
+      <meta property="og:image" content="https://technical-guidance.service.justice.gov.uk//images/govuk-large.png" />
+      <meta property="og:site_name" content="MoJ Technical Guidance" />
+      <meta property="og:title" content="How to get, register or manage a domain name" />
+      <meta property="og:type" content="object" />
+      <meta property="og:url" content="https://technical-guidance.service.justice.gov.uk//documentation/standards/how-to-get-a-domain-name.html" />
+
+    
+  </head>
+
+  <body class="govuk-template__body">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    <div class="app-pane">
+      <div class="app-pane__header toc-open-disabled">
+        <a href="#content" class="govuk-skip-link">Skip to main content</a>
+
+        <header class="govuk-header app-header" role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-header__container--full-width">
+    <div class="govuk-header__logo">
+      <a href="/" class="govuk-header__link govuk-header__link--homepage">
+        <span class="govuk-header__product-name">
+          MoJ Technical Guidance
+        </span>
+      </a>
+    </div>
+    <div class="govuk-header__content">
+      <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+      <nav>
+        <ul id="navigation" class="govuk-header__navigation govuk-header__navigation--end" aria-label="Top Level Navigation">
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="https://github.com/ministryofjustice/technical-guidance">GitHub</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+      </div>
+
+        <div id="toc-heading" class="toc-show fixedsticky">
+          <a href="#toc" class="toc-show__label js-toc-show" aria-controls="toc">
+            Table of contents <span class="toc-show__icon"></span>
+          </a>
+        </div>
+
+      <div class="app-pane__body" data-module="in-page-navigation">
+          <div class="app-pane__toc">
+            <div class="toc" data-module="table-of-contents">
+              <div class="search" data-module="search">
+  <form action="https://www.google.co.uk/search" method="get" role="search">
+    <input type="hidden" name="as_sitesearch" value="https://technical-guidance.service.justice.gov.uk/"/>
+    <label class="govuk-label search__label" for="search">
+      Search (via Google)
+    </label>
+    <input class="govuk-input govuk-!-margin-bottom-4" id="search" name="q" type="text" aria-controls="search-results" placeholder="Search">
+  </form>
+  <div id="search-results" class="search-results" aria-hidden="true" role="dialog" aria-labelledby="search-results-title">
+    <div class="search-results__inner">
+      <button class="search-results__close">Close<span class="search-results__close-label"> search results</span></button>
+      <h2 id="search-results-title" class="search-results__title" aria-live="polite">Results</h2>
+      <div class="search-results__content"></div>
+    </div>
+  </div>
+</div>
+
+              <a href="#" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></a>
+              <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading">
+                      <ul>
+  <li>
+    <a href="#how-to-get-register-or-manage-a-domain-name"><span>How to get, register or manage a domain name</span></a>
+    <ul>
+      <li>
+        <a href="#requesting-a-new-domain-or-changes-to-an-existing-domain"><span>Requesting a new domain or changes to an existing domain</span></a>
+      </li>
+      <li>
+        <a href="#moving-your-domain-to-the-central-register"><span>Moving your domain to the central register</span></a>
+      </li>
+      <li>
+        <a href="#defensive-domain-registrations"><span>Defensive domain registrations</span></a>
+      </li>
+      <li>
+        <a href="#deprecating-domains"><span>Deprecating domains</span></a>
+        <ul>
+          <li>
+            <a href="#list-of-deprecated-domains"><span>List of deprecated domains</span></a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#mandatory-dns-records-for-domains"><span>Mandatory DNS records for domains</span></a>
+        <ul>
+          <li>
+            <a href="#functional-nameservers"><span>Functional nameservers</span></a>
+          </li>
+          <li>
+            <a href="#sender-policy-framework-spf"><span>Sender Policy Framework (SPF)</span></a>
+          </li>
+          <li>
+            <a href="#domain-based-message-authentication-reporting-and-conformance-dmarc"><span>Domain-based Message Authentication, Reporting and Conformance (DMARC)</span></a>
+          </li>
+          <li>
+            <a href="#mail-exchanger-mx"><span>Mail Exchanger (MX)</span></a>
+          </li>
+          <li>
+            <a href="#domainkeys-identified-mail-dkim"><span>DomainKeys Identified Mail (DKIM)</span></a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#mandatory-https-ssl-and-tls-configuration-for-domains"><span>Mandatory HTTPS, SSL and TLS configuration for domains</span></a>
+        <ul>
+          <li>
+            <a href="#ssl-and-tls-configuration"><span>SSL and TLS configuration</span></a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+              </nav>
+            </div>
+          </div>
+
+        <div class="app-pane__content toc-open-disabled">
+          <main id="content" class="technical-documentation" data-module="anchored-headings">
+            <h1 id="how-to-get-register-or-manage-a-domain-name">How to get, register or manage a domain name</h1><p>The MOJ centrally registers and maintains domains for use across the department.
+Domains used within the MOJ must follow the <a href="naming-domains.html">naming domains</a> standards and must be registered by the MOJ&rsquo;s
+<a href="https://ministryofjustice.github.io/operations-engineering/documentation/services/domain-management.html#domain-management">Operations Engineering team</a>.</p>
+<p>As per the <a href="naming-domains.html#non-gov-uk-domains">Naming domains guidance</a>, the use of non-<code>gov.uk</code> domain names
+is strongly discouraged.</p>
+<h2 id="requesting-a-new-domain-or-changes-to-an-existing-domain">Requesting a new domain or changes to an existing domain</h2><p>If you need to request a new domain or changes to an existing domain name,
+<a href="mailto:domains@digital.justice.gov.uk">email the Operations Engineering team</a>.</p>
+<p>The Operations Engineering team will help ensure that your domain meets the
+<a href="naming-domains.html">naming domains standard</a> and our <a href="naming-things.html">wider standards for
+naming things</a>. The Operations Engineering team will also
+help identify which subdomain is most appropriate for your service.</p>
+<p>You <strong>must not</strong> register a domain outside of the Operations Engineering team.</p>
+<h2 id="moving-your-domain-to-the-central-register">Moving your domain to the central register</h2><p>If you currently use or have registered a non-<code>gov.uk</code> domain, you <strong>must</strong>
+transfer the domain to the Operations Engineering team. The Operations
+Engineering team will:</p>
+
+<ul>
+<li>provide you with a new domain that meets <a href="naming-domains.html">naming domains</a> standards</li>
+<li>redirect your old domain to your new domain</li>
+<li>help you decommission and deprecate your old domain</li>
+</ul>
+<h2 id="defensive-domain-registrations">Defensive domain registrations</h2><p>Defensive domains must be requested through the <a href="mailto:domains@digital.justice.gov.uk">Operations Engineering team</a>.</p>
+<p>The MOJ&rsquo;s <a href="https://security-guidance.service.justice.gov.uk/defensive-domain-registration/#defensive-domain-registrations">Security Guidance</a>
+covers why we defensively register domain names.</p>
+<h2 id="deprecating-domains">Deprecating domains</h2><p>If you need to deprecate a domain (both <code>gov.uk</code> and non-<code>gov.uk</code>), please
+contact the <a href="mailto:domains@digital.justice.gov.uk">Operations Engineering team</a>.</p>
+<p>The Operations Engineering team will ensure it:</p>
+
+<ul>
+<li>redirects to your new domain, if applicable</li>
+<li>has the correct DNS records set for a domain that has been deprecated</li>
+</ul>
+<h3 id="list-of-deprecated-domains">List of deprecated domains</h3><p>The MOJ no longer supports:</p>
+
+<ul>
+<li>*.dsd.io, which was previously used for non-production services</li>
+</ul>
+<h2 id="mandatory-dns-records-for-domains">Mandatory DNS records for domains</h2><p>If you have DNS delegation for a subdomain, you must set the following DNS
+records yourselves. If you do not have DNS delegation, the Operations
+Engineering team will set these to the appropriate value for you.</p>
+<h3 id="functional-nameservers">Functional nameservers</h3><p>Your domain must always have functional nameservers.</p>
+<h3 id="sender-policy-framework-spf">Sender Policy Framework (SPF)</h3><p>Your domain must always have a <code>TXT</code> record for SPF set.</p>
+<p>For example, if your domain does not send emails, you would set a <code>TXT</code> record
+to:</p>
+<p><code>v=spf1 -all</code></p>
+<p>Additional guidance is available on <a href="https://www.gov.uk/government/publications/email-security-standards/sender-policy-framework-spf">GOV.UK&rsquo;s SPF implementation guidance</a>.</p>
+<h3 id="domain-based-message-authentication-reporting-and-conformance-dmarc">Domain-based Message Authentication, Reporting and Conformance (DMARC)</h3><p>Your domain must always have a DMARC record configured in line with the
+<a href="https://www.gov.uk/government/publications/email-security-standards/domain-based-message-authentication-reporting-and-conformance-dmarc">GOV.UK&rsquo;s DMARC guidance</a>.</p>
+<p>For example, to set a reject policy, you would set a <code>TXT</code> record on
+<code>_dmarc.mydomain.gov.uk</code> to:</p>
+<p><code>v=DMARC1;p=reject;rua=mailto:dmarc-rua@dmarc.service.gov.uk;</code></p>
+<h3 id="mail-exchanger-mx">Mail Exchanger (MX)</h3><p>You must set MX records on your domain. If you&rsquo;re using your domain for email,
+use the correct DKIM records supplied by your email provider (AWS SES,
+SendGrid, etc).</p>
+<p>If your domain does not accept email, you must set a <a href="https://tools.ietf.org/id/draft-delany-nullmx-02.html#rfc.section.4">NULL MX Resource Record</a>, such
+as:</p>
+<div class="table-container">
+        <table>
+          <tr>
+<th>Name/host/alias</th>
+<th>Time to live</th>
+<th>Record type</th>
+<th>Priority</th>
+<th>Value</th>
+</tr>
+<tr>
+<td><code>.</code> (full stop)</td>
+<td>3600</td>
+<td>MX</td>
+<td>0</td>
+<td><code></code>&nbsp;(empty)</td>
+</tr>
+
+        </table>
+      </div><h3 id="domainkeys-identified-mail-dkim">DomainKeys Identified Mail (DKIM)</h3><p>You must set a DKIM record on your domain. If you&rsquo;re using your domain for
+email, use the correct DKIM records supplied by your email provider (AWS SES,
+SendGrid, etc).</p>
+<p>If your domain does not accept email, you must set a nullified wildcard DKIM
+record. This will ensure any cached keys will be explicitly removed.</p>
+<p>For example, on the domain: <code>*._domainkey.mydomain.gov.uk</code>, you&rsquo;d set a TXT
+record to:</p>
+<p><code>v=DKIM1; p=</code></p>
+<h2 id="mandatory-https-ssl-and-tls-configuration-for-domains">Mandatory HTTPS, SSL and TLS configuration for domains</h2><p>Your domains must always:</p>
+
+<ul>
+<li>Have a valid TLS certificate</li>
+<li>301 (Permanently Moved) redirect unencrypted HTTP requests to HTTPS</li>
+<li>Use <a href="https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html">HTTP Strict Transport Security (HSTS)</a>
+to force all connections to use HTTPS</li>
+<li>Utilise <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests"><code>upgrade-insecure-requests</code> in your Content Security Policy (CSP)</a>
+to force all content on a service to be loaded over HTTPS</li>
+</ul>
+<p>Your service must always actively:</p>
+
+<ul>
+<li>turn off TLS insecure renegotiation</li>
+<li>turn off TLS insecure protocol downgrade</li>
+<li>turn off TLS record compression</li>
+<li>turn off export key generation</li>
+<li>turn off support for SSL 2</li>
+</ul>
+<h3 id="ssl-and-tls-configuration">SSL and TLS configuration</h3><p>You <strong>must not</strong> use the deprecated SSL protocol. You <strong>must</strong> use the TLS
+protocol.</p>
+<div class="table-container">
+        <table>
+          <tr>
+<th>Protocol and version</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>TLS 1.3</td>
+<td>Latest</td>
+</tr>
+<tr>
+<td>TLS 1.2</td>
+<td>Long-term support</td>
+</tr>
+<tr>
+<td>TLS 1.1</td>
+<td>Deprecated in 2021 (<a href="https://datatracker.ietf.org/doc/rfc8996/">RFC 8896</a>), <a href="https://arstechnica.com/gadgets/2018/10/browser-vendors-unite-to-end-support-for-20-year-old-tls-1-0/">deprecated by Apple, Google, Microsoft, Mozilla in 2020</a></td>
+</tr>
+<tr>
+<td>TLS 1.0</td>
+<td>Deprecated in 2021 (<a href="https://datatracker.ietf.org/doc/rfc8996/">RFC 8896</a>), <a href="https://arstechnica.com/gadgets/2018/10/browser-vendors-unite-to-end-support-for-20-year-old-tls-1-0/">deprecated by Apple, Google, Microsoft, Mozilla in 2020</a></td>
+</tr>
+<tr>
+<td>SSLv3</td>
+<td>Deprecated in 2015 (<a href="https://datatracker.ietf.org/doc/html/rfc7568">RFC 7568</a>)</td>
+</tr>
+<tr>
+<td>SSLv2</td>
+<td>Deprecated in 2011 (<a href="https://datatracker.ietf.org/doc/html/rfc6176">RFC 6176</a>)</td>
+</tr>
+
+        </table>
+      </div>
+              <div data-module='page-expiry' data-last-reviewed-on="2022-01-05">
+    <div class='page-expiry--not-expired'>
+      This page was last reviewed on 5 October 2021.
+
+        It needs to be reviewed again on 5 January 2022
+.
+    </div>
+
+    <div class='page-expiry--expired'>
+      This page was set to be reviewed before 5 January 2022.
+      This might mean the content is out of date.
+    </div>
+  </div>
+
+          </main>
+
+          <aside>
+              <ul class="contribution-banner">
+                <li><a href="https://github.com/ministryofjustice/technical-guidance/blob/main/source/documentation/standards/how-to-get-a-domain-name.html.md.erb">View source</a></li>
+                <li><a href="https://github.com/ministryofjustice/technical-guidance/issues/new?labels=bug&amp;title=Re:%20'How%20to%20get,%20register%20or%20manage%20a%20domain%20name'&amp;body=Problem%20with%20'How%20to%20get,%20register%20or%20manage%20a%20domain%20name'%20(https://technical-guidance.service.justice.gov.uk//documentation/standards/how-to-get-a-domain-name.html)">Report problem</a></li>
+                <li><a href="https://github.com/ministryofjustice/technical-guidance">GitHub Repo</a></li>
+              </ul>
+          </aside>
+
+          <footer class="govuk-footer app-footer" role="contentinfo">
+  <div class="govuk-footer__meta">
+    <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        class="govuk-footer__licence-logo"
+        xmlns="http://www.w3.org/2000/svg"
+        viewbox="0 0 483.2 195.7"
+        height="17"
+        width="41"
+      >
+        <path
+          fill="currentColor"
+          d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+        />
+      </svg>
+      <span class="govuk-footer__licence-description">
+        All content is available under the
+        <a
+          class="govuk-footer__link"
+          href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          rel="license"
+        >Open Government Licence v3.0</a>, except where otherwise stated
+      </span>
+    </div>
+    <div class="govuk-footer__meta-item">
+      <a
+        class="govuk-footer__link govuk-footer__copyright-logo"
+        href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+      >© Crown copyright</a>
+    </div>
+  </div>
+</footer>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="../../javascripts/application.js"></script>
+  </body>
+</html>
